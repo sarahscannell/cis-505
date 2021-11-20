@@ -243,7 +243,7 @@ public class ScannellGradeBookApp extends Application {
             ArrayList<Student> students = getStudents();
             String results = "";
             for(int i=0; i<students.size(); i++) {
-                results += students.get(i) + "\n";
+                results += students.get(i).toString() + "\n";
             }
             txtResults.setText(results);
             flipStacks(stack);
